@@ -44,8 +44,7 @@ var plY = (word) => {
 const vowels = ["a","e","i","o","u","y"]
 const q = ["q"]
 const plMain = ()=>{
-    let words = document.getElementById("user-input").value
-	words = words.toLowerCase()
+    let words = document.getElementById("user-input").value.toLowerCase()
 	console.log(words)
     if(words!==""){
     let splitWords = plSplit(words)
