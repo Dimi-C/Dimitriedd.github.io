@@ -46,7 +46,7 @@ const q = ["q"]
 const plMain = ()=>{
     let words = document.getElementById("user-input").value
     if(words!==""){
-    let splitWords = plSplit(words)
+    let splitWords = plSplit(words).toLowerCase
     // console.log(splitWords);
     let newWords=[]
     for(let i=0;i<splitWords.length;i++){
