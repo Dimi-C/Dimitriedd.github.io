@@ -45,8 +45,9 @@ const vowels = ["a","e","i","o","u","y"]
 const q = ["q"]
 const plMain = ()=>{
     let words = document.getElementById("user-input").value
+	words = words.toLowerCase
     if(words!==""){
-    let splitWords = plSplit(words).toLowerCase
+    let splitWords = plSplit(words)
     // console.log(splitWords);
     let newWords=[]
     for(let i=0;i<splitWords.length;i++){
